@@ -53,7 +53,12 @@
 
 			<div class="btn-group pull-right action-bar hidden-sm hidden-xs">
 				<button class="btn btn-default composer-discard" data-action="discard" tabindex="-1"><i class="fa fa-times"></i> [[topic:composer.discard]]</button>
-				<button class="btn btn-default composer-discard" data-action="discard" tabindex="-1"><i class="fa fa-times"></i> [[topic:composer.discard]]</button>
+
+				<button class="btn btn-sm btn-link py-2 text-body fw-semibold text-nowrap" data-action="anonymous">
+					<i class="fa fa-eye"></i>
+					<span class="d-none d-md-inline make-anonymous">[[modules:composer.post_anonymous_button]]</span>
+					<span class="d-none d-md-inline make-public">Make NOT anonymous</span>
+				</button>
 
 				<ul class="dropdown-menu">{{{ each submitOptions }}}<li><a href="#" data-action="{./action}">{./text}</a></li>{{{ end }}}</ul>
 				<button class="btn btn-primary composer-submit" data-action="post" tabindex="6" data-text-variant=" [[topic:composer.schedule]]"><i class="fa fa-check"></i> [[topic:composer.submit]]</button>
