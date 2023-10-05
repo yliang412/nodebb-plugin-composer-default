@@ -53,7 +53,6 @@
 
 			<div class="btn-group pull-right action-bar hidden-sm hidden-xs">
 				<button class="btn btn-default composer-discard" data-action="discard" tabindex="-1"><i class="fa fa-times"></i> [[topic:composer.discard]]</button>
-				<button class="btn btn-default composer-discard" data-action="discard" tabindex="-1"><i class="fa fa-times"></i> [[topic:composer.discard]]</button>
 
 				<ul class="dropdown-menu">{{{ each submitOptions }}}<li><a href="#" data-action="{./action}">{./text}</a></li>{{{ end }}}</ul>
 				<button class="btn btn-primary composer-submit" data-action="post" tabindex="6" data-text-variant=" [[topic:composer.schedule]]"><i class="fa fa-check"></i> [[topic:composer.submit]]</button>
@@ -61,6 +60,16 @@
 					<span class="caret"></span>
 					<span class="sr-only">[[topic:composer.additional-options]]</span>
 				</button>
+
+				<div title="[[topic:sort_by]]" class="btn-group bottom-sheet hidden-xs" component="thread/sort">
+						<button class="btn btn-sm btn-default dropdown-toggle" data-toggle="dropdown" type="button">
+						<span><i class="fa fa-fw fa-sort"></i></span></button>
+						<ul class="dropdown-menu dropdown-menu-right">
+								<li><a href="#" class="oldest_to_newest" data-sort="oldest_to_newest"><i class="fa fa-fw"></i> [[topic:oldest_to_newest]]</a></li>
+								<li><a href="#" class="newest_to_oldest" data-sort="newest_to_oldest"><i class="fa fa-fw"></i> [[topic:newest_to_oldest]]</a></li>
+								<li><a href="#" class="most_votes" data-sort="most_votes"><i class="fa fa-fw"></i> [[topic:most_votes]]</a></li>
+						</ul>
+				</div>
 			</div>
 		</div>
 
